@@ -211,13 +211,17 @@ footer {
 		margin-bottom: 3rem;
 	}
 
+	 // changes AW 
+	 // old > color: white;
+	 // new below
 	.widget-title {
-		@include css(color, footer, widget, title, color);
+		@include css( footer, widget, title, color);
 		@include css(font-size, footer, widget, title, size);
 		@include css(font-weight, footer, widget, title, weight);
 		@include css(font-family, footer, widget, title, family);
 		@include css(text-transform, footer, widget, title, transform);
 		@include css(margin, footer, widget, title, margin);
+		color: #000;
 	}
 
 	.links li {
@@ -355,4 +359,67 @@ footer {
 	#scroll-top {
 		display: none;
 	}
+}
+
+// changes AW
+// all new
+
+.myntra-tag{
+	background-color: red;
+    /* padding: 5px; */
+    margin-left: 4px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 2.5px !important;
+}
+.footer-play-store-img1{
+	// height: 200px;
+	width: 167px;
+}
+.footer-play-store-img2{
+	width: 149px;
+    margin-left: 15px;
+}
+.footer-images-row{
+	color: black;
+	font-weight: 700;
+}
+.footer-social-icon-fb{
+	font-size: 30px;
+	margin-right: 10px;
+}
+.footer-social-icon-twiter{
+	font-size: 30px;
+	margin-right: 10px;
+}
+.footer-social-icon-youtube{
+	font-size: 30px;
+	margin-right: 10px;
+}
+.footer-social-icon-insta{
+	font-size: 30px;
+}
+.footer-img-right-tags{
+	width: 75px;
+    height: 62px;
+}
+.footer-highlights{
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer-right-tags-col{
+	display: flex;
+}
+.footer-tags-p{
+	margin-left: 10px;
+	font-size: 14px;
+}
+.footer-contact{
+	font-size: 14px;
+	color: #526CD0;
+	font-weight: bold;
+	cursor: pointer;
 }

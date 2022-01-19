@@ -17,6 +17,7 @@ import WishlistPage from "./pages/WishlistPage";
 import ScrollToTop from "./features/scroll-to-top";
 import BlogsPage from "./pages/BlogsPage";
 import BlogPage from "./pages/BlogPage";
+import BrandPage from "./pages/BrandPage";
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
           <Route path="/blogs" element={<BlogsPage />} />
 
           <Route path="/blogs/:blogId" element={<BlogPage />} />
+
+          <Route path="/brands" element={<BrandPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

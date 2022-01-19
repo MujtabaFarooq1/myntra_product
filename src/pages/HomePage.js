@@ -47,28 +47,47 @@ function HomePage() {
   return (
     <>
       <main
-        className={`skeleton-body skel-shop-products ${
-          loading ? "" : "loaded"
-        }`}
+        className={`skeleton-body skel-shop-products ${loading ? "" : "loaded"
+          }`}
       >
         <HomeSection />
 
-        <LazyLoadImage
-          alt={"customBanner1"}
-          height={"auto"}
-          src={"/images/banners/customBanner1.png"} // use normal <img> attributes as props
-          width={"100%"}
-        />
-        <LazyLoadImage
-          alt={"customBanner1"}
-          height={"auto"}
-          src={"/images/banners/customBanner2.png"} // use normal <img> attributes as props
-          width={"100%"}
-          style={{ marginBottom: "1rem" }}
-        />
 
-        <div className="bannerSectionContainer">
-          <BannerSection />
+
+
+        <div className="row ml-3 mr-3 mb-2">
+          <div className="col-12">
+            <LazyLoadImage
+              alt={"customBanner1"}
+              height={"auto"}
+              src={"/images/banners/customBanner1.png"} // use normal <img> attributes as props
+              width={"100%"}
+            />
+          </div>
+        </div>
+
+
+
+
+        <div className="row ml-3 mr-3">
+          <div className="col-12">
+            <LazyLoadImage
+              alt={"customBanner1"}
+              height={"auto"}
+              src={"/images/banners/customBanner2.png"} // use normal <img> attributes as props
+              width={"100%"}
+              style={{ marginBottom: "1rem" }}
+            />
+          </div>
+        </div>
+
+        <div className="row text-center ml-5 mr-5 mb-5">
+          <div className="col-12 mb-2">
+            <img src="./images/brand-1.png" alt="" />
+          </div>
+          <div className="bannerSectionContainer">
+            <BannerSection />
+          </div>
         </div>
 
         <div className="container">
