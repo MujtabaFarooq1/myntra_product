@@ -66,6 +66,36 @@ const fakeData = {
           height: 800,
           url: "/uploads/product_4_1_4000b10b66.jpg",
         },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
+        {
+          width: 800,
+          height: 800,
+          url: "/uploads/product_4_1_4000b10b66.jpg",
+        },
       ],
       pictures: [
         {

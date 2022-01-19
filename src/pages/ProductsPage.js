@@ -168,7 +168,10 @@ function ProductsPage() {
 
         <div className="row">
           <div className="col-lg-9 main-content">
-            <nav className="toolbox sticky-header mobile-sticky">
+            <nav
+              className="toolbox sticky-header mobile-sticky"
+              style={{ justifyContent: "flex-end" }}
+            >
               <div className="toolbox-left">
                 <a
                   href="/"
@@ -259,42 +262,6 @@ function ProductsPage() {
                   </div>
                 </div>
               </div>
-
-              <div className="toolbox-right">
-                <div className="toolbox-item toolbox-show">
-                  <label>Show:</label>
-
-                  <div className="select-custom">
-                    <select
-                      name="count"
-                      className="form-control"
-                      value={perPage}
-                      onChange={(e) => onPerPageChange(e)}
-                    >
-                      <option value="12">12</option>
-                      <option value="24">24</option>
-                      <option value="36">36</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="toolbox-item layout-modes">
-                  <ALink
-                    href={{ pathname: location.pathname, query: query }}
-                    className="layout-btn btn-grid active"
-                    title="Grid"
-                  >
-                    <i className="icon-mode-grid"></i>
-                  </ALink>
-                  <ALink
-                    href={{ pathname: "/shop/list", query: query }}
-                    className="layout-btn btn-list"
-                    title="List"
-                  >
-                    <i className="icon-mode-list"></i>
-                  </ALink>
-                </div>
-              </div>
             </nav>
 
             <ProductsGrid
@@ -306,20 +273,7 @@ function ProductsPage() {
             {false || (products && products.length) ? (
               <nav className="toolbox toolbox-pagination">
                 <div className="toolbox-item toolbox-show">
-                  <label>Show:</label>
-
-                  <div className="select-custom">
-                    <select
-                      name="count"
-                      className="form-control"
-                      value={perPage}
-                      onChange={(e) => onPerPageChange(e)}
-                    >
-                      <option value="12">12</option>
-                      <option value="24">24</option>
-                      <option value="36">36</option>
-                    </select>
-                  </div>
+                  <label>&nbsp;</label>
                 </div>
                 <Pagination totalPage={totalPage} />
               </nav>

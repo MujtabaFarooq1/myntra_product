@@ -1,4 +1,5 @@
 import SlideToggle from "react-slide-toggle";
+
 // import { useRouter } from "next/router";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -9,6 +10,7 @@ import Tree from "rc-tree";
 import InputRange from "react-input-range";
 
 import ALink from "../../../layouts/common/ALink";
+import SidenavCategories from "../../../features/sidenavCategories";
 import OwlCarousel from "../../../features/owl-carousel";
 
 // import withApollo from "../../../../server/apollo";
@@ -28,6 +30,34 @@ const TreeNode = (props) => {
     </>
   );
 };
+
+const customCategories = [
+  "shirt",
+  "pants",
+  "socks",
+  "shoes",
+  "shirt",
+  "pants",
+  "socks",
+  "shoes",
+];
+
+const brands = [
+  "brand1",
+  "brand2",
+  "brand3",
+  "brand4",
+  "brand5",
+  "brand6",
+  "brand7",
+  "brand1",
+  "brand2",
+  "brand3",
+  "brand4",
+  "brand5",
+  "brand6",
+  "brand7",
+];
 
 function ShopSidebarOne(props) {
   // const router = useRouter();
@@ -185,24 +215,33 @@ function ShopSidebarOne(props) {
                   </h3>
                   <div className="overflow-hidden" ref={setCollapsibleElement}>
                     <div className="widget-body">
-                      <Tree
-                        className="no-icon cat-list border-0"
-                        selectable={true}
-                        showIcon={false}
-                        defaultExpandedKeys={
-                          query?.category ? [query?.category] : []
-                        }
-                        switcherIcon={(props) => {
-                          return !props.isLeaf ? (
-                            <span className="toggle"></span>
-                          ) : (
-                            ""
-                          );
-                        }}
-                        selectedKeys={query?.category ? [query?.category] : []}
-                        treeData={categories}
-                        onSelect={filterByCategory}
-                      />
+                      <SidenavCategories customCategories={customCategories} />
+                    </div>
+                  </div>
+                </>
+              )}
+            </SlideToggle>
+          </div>
+
+          <div className="widget">
+            <SlideToggle>
+              {({ onToggle, setCollapsibleElement, toggleState }) => (
+                <>
+                  <h3 className="widget-title">
+                    <a
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onToggle();
+                      }}
+                      className={toggleState === "COLLAPSED" ? "collapsed" : ""}
+                    >
+                      Brands
+                    </a>
+                  </h3>
+                  <div className="overflow-hidden" ref={setCollapsibleElement}>
+                    <div className="widget-body">
+                      <SidenavCategories customCategories={brands} />
                     </div>
                   </div>
                 </>
@@ -389,70 +428,6 @@ function ShopSidebarOne(props) {
               )}
             </SlideToggle>
           </div>
-
-          {!props.removeItems ? (
-            <>
-              <div className="widget widget-featured">
-                <h3 className="widget-title">Featured</h3>
-
-                <div className="widget-body">
-                  <OwlCarousel
-                    adClass="widget-featured-products"
-                    isTheme={false}
-                    options={widgetFeaturedProductSlider}
-                  >
-                    <div className="featured-col">
-                      {false
-                        ? [0, 1, 2].map((item, index) => (
-                            <div
-                              className="skel-product-col skel-pro mb-2"
-                              key={"product-one" + index}
-                            ></div>
-                          ))
-                        : data &&
-                          data?.shopSidebarData?.featured?.map(
-                            (item, index) => (
-                              <ProductThree
-                                product={item}
-                                key={`featured-${index}`}
-                              />
-                            )
-                          )}
-                    </div>
-                    <div className="featured-col">
-                      {false
-                        ? [0, 1, 2].map((item, index) => (
-                            <div
-                              className="skel-product-col skel-pro mb-2"
-                              key={"product-one" + index}
-                            ></div>
-                          ))
-                        : data &&
-                          data?.shopSidebarData?.featured?.map(
-                            (item, index) => (
-                              <ProductThree
-                                product={item}
-                                key={`featured-${index}`}
-                              />
-                            )
-                          )}
-                    </div>
-                  </OwlCarousel>
-                </div>
-              </div>
-
-              <div className="widget widget-block">
-                <h3 className="widget-title">Custom HTML Block</h3>
-                <h5>This is a custom sub-title.</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  non placerat mi. Etiam non tellus{" "}
-                </p>
-              </div>
-            </>
-          ) : (
-            ""
-          )}
         </StickyBox>
       </aside>
     </>

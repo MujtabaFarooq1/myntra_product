@@ -59,12 +59,17 @@ function ProductMediaFive(props) {
             {product
               ? product.large_pictures.map((item, index) => (
                   <div
-                    className={`product-item col-sm-6 ${subClass}`}
+                    className={`product-item col-sm-6 col-lg-6 ${subClass}`}
                     key={"product-item" + index}
                   >
                     <div className="inner">
                       <Magnifier
-                        style={{ paddingTop: "100%", position: "relative" }}
+                        style={{
+                          paddingTop: "100%",
+                          position: "relative",
+                          height: "500px",
+                          objectFit: "cover",
+                        }}
                         imageSrc={
                           process.env.REACT_APP_LOCAL_ASSET_URL + item.url
                         }

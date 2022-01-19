@@ -94,12 +94,12 @@ function ProductPage() {
         >
           <div className="row">
             <ProductMediaFive
-              adClass="col-lg-5 col-md-6"
+              adClass="col-lg-8 col-md-6"
               subClass="col-md-12"
               product={product}
             />
 
-            <div className="col-lg-7 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <StickyBox
                 className="sticky-wrapper sticky-sidebar"
                 offsetTop={70}
