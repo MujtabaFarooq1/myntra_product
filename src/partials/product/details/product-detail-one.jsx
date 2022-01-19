@@ -193,7 +193,9 @@ function ProductDetailOne(props) {
       <div className={`skel-pro skel-detail ${adClass}`}></div>
       {product && (
         <div className={`product-single-details ${adClass}`}>
-          <h1 className="product-title">{product.name}</h1>
+          <h1 className="product-brand"> Gucci </h1>
+
+          <h2 className="product-title"> {product.name} </h2>
 
           {isNav ? <ProductNav prev={prev} next={next} /> : ""}
 

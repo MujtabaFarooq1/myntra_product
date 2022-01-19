@@ -81,7 +81,7 @@ function ProductOne(props) {
     <div
       className={`product-default inner-quickview inner-icon media-with-lazy ${adClass}`}
     >
-      <figure>
+      <figure style={{ height: "350px" }}>
         <ALink href={`/product/${link}/${product.slug}`}>
           <div className="lazy-overlay"></div>
 
