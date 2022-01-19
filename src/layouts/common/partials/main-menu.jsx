@@ -32,17 +32,17 @@ function MainMenu({ router }) {
       <nav className="main-nav w-100">
         <ul className="menu sf-js-enabled sf-arrows">
           <li className={pathname === "/" ? "active" : ""}>
-            <ALink href="/">Home</ALink>
+            <ALink href="/">Men</ALink>
           </li>
           <li className={pathname.startsWith("/shop") ? "active" : ""}>
             <ALink href="/shop" className="sf-with-ul">
-              Categories
+              Women
             </ALink>
             <div className="megamenu megamenu-fixed-width megamenu-3cols">
               <div className="row">
                 <div className="col-lg-4">
                   <ALink href="#" className="nolink">
-                    VARIATION 1
+                    Kids
                   </ALink>
                   <ul className="submenu">
                     {mainMenu.shop.variation1.map((variations, index) => (
@@ -101,7 +101,7 @@ function MainMenu({ router }) {
               href="/product/default/battery-charger"
               className="sf-with-ul"
             >
-              Products
+              Kids
             </ALink>
             <div className="megamenu megamenu-fixed-width">
               <div className="row">
@@ -166,9 +166,9 @@ function MainMenu({ router }) {
               </div>
             </div>
           </li>
-          <li className={isOtherPage() ? "active" : ""}>
-            <ALink href="#" className="sf-with-ul">
-              Pages
+          <li className={isOtherPage() ? "active newMenuItem" : "newMenuItem"}>
+            <ALink href="#" className="sf-with-ul ">
+              Arrival
             </ALink>
             <ul>
               {mainMenu.other.map((variations, index) => (
@@ -177,15 +177,6 @@ function MainMenu({ router }) {
                 </li>
               ))}
             </ul>
-          </li>
-          <li className={pathname === "/pages/blog" ? "active" : ""}>
-            <ALink href="/pages/blog">Blog</ALink>
-          </li>
-          <li className={pathname === "/pages/about-us" ? "active" : ""}>
-            <ALink href="/pages/about-us">About Us</ALink>
-          </li>
-          <li className={pathname === "/pages/contact-us" ? "active" : ""}>
-            <ALink href="/pages/contact-us">Contact Us</ALink>
           </li>
         </ul>
       </nav>

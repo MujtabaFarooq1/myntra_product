@@ -608,3 +608,21 @@
     }
   }
 }
+
+// %Changed%
+
+// -- Added New Item
+.newMenuItem {
+  position: relative;
+}
+
+.newMenuItem::after {
+  content: "New";
+  font-weight: bold;
+  color: #fe3f6c;
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  text-transform: uppercase;
+}

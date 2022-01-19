@@ -20,6 +20,7 @@ import PromoSection from "../partials/home/promo-section";
 import BrandSection from "../partials/home/brand-section";
 import BlogSection from "../partials/home/blog-section";
 import fakeData from "../FakeData/fakeData";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HomePage() {
   const data = fakeData;
@@ -52,10 +53,28 @@ function HomePage() {
       >
         <HomeSection />
 
-        <div className="container">
-          <InfoSection />
+        <LazyLoadImage
+          alt={"customBanner1"}
+          height={"auto"}
+          src={"/images/banners/customBanner1.png"} // use normal <img> attributes as props
+          width={"100%"}
+        />
+        <LazyLoadImage
+          alt={"customBanner1"}
+          height={"auto"}
+          src={"/images/banners/customBanner2.png"} // use normal <img> attributes as props
+          width={"100%"}
+          style={{ marginBottom: "1rem" }}
+        />
 
+        <div className="bannerSectionContainer">
           <BannerSection />
+        </div>
+
+        <div className="container">
+          {/* <InfoSection /> */}
+
+          {/* <BannerSection /> */}
         </div>
 
         <FeaturedCollection product={featured} loading={loading} />

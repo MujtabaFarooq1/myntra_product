@@ -128,7 +128,7 @@ function SearchForm() {
           <input
             className="form-control"
             type="text"
-            placeholder="Search"
+            placeholder="Serach for procducts , brands and more"
             aria-label="Search"
           />
 

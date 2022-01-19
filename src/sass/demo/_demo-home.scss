@@ -104,8 +104,15 @@ section {
     }
   }
 
+  // %Changed%
+  // - Old
+  // img {
+  //   min-height: 499px;
+  //   max-height: 499px;
+  // }
+
+  // - New
   img {
-    min-height: 499px;
     max-height: 499px;
   }
 
@@ -673,4 +680,14 @@ section {
   .transparent-dots {
     left: 9px;
   }
+}
+
+// %Changed%
+// Added new things
+.bannerSectionContainer {
+  padding: 0 1.5rem;
+
+  // & img {
+  //   object-fit: contain;
+  // }
 }

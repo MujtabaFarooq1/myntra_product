@@ -179,10 +179,22 @@ header {
   align-items: center;
 }
 
+// %Changed%
+// - Prev
 .header-center,
 .header-right {
   margin-left: auto;
 }
+
+// - New
+.header-right {
+  margin-left: auto;
+}
+
+.header-center {
+  margin-left: 3.5rem;
+}
+//--------------------
 
 .header-bottom {
   .header-center {

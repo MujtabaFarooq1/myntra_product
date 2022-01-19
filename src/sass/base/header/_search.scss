@@ -153,6 +153,12 @@
   @include css(height, header, search, height);
   @include clearfix;
 
+  // %Changed%
+  // - Old
+  // No width
+  //- New
+  width: 400px;
+
   border-radius: get(header, search, border, radius);
   border: get(header, search, border, width) solid
     get(header, search, border, color);
