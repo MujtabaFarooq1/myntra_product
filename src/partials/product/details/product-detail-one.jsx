@@ -6,6 +6,7 @@ import { v4 as uuid4 } from "uuid";
 import { connect } from "react-redux";
 import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ReactTooltip from "react-tooltip";
 
 // Import Actions
 // import { actions as WishlistAction } from "../../../../store/wishlist";
@@ -17,6 +18,7 @@ import Qty from "../qty";
 import ALink from "../../../layouts/common/ALink";
 import { cartActions } from "../../../app/reducers/cart/cartSlice";
 import { wishListActions } from "../../../app/reducers/wishlist/wishlistSlice";
+import SizeGuideModal from "../../../features/modals/size-guide-modal";
 
 function ProductDetailOne(props) {
   // const router = useRouter();
@@ -348,6 +350,7 @@ function ProductDetailOne(props) {
               {attrs.sizes.length > 0 ? (
                 <div className="product-single-filter d-flex align-items-center">
                   <label>Size:</label>
+
                   <ul className="config-size-list d-inline-block">
                     {attrs.sizes.map((item, index) => (
                       <li
@@ -378,11 +381,23 @@ function ProductDetailOne(props) {
                             className="d-flex align-items-center justify-content-center"
                             onClick={(e) => selectSize(item.size, e)}
                           >
-                            {item.name}
+                            <span
+                              data-tip={`Garment Measurement:Bust - 34.5in
+                              The model (height 5'8") is wearing a size S`}
+                              className="d-inline-block"
+                            >
+                              {item.name}
+                            </span>
                           </a>
                         )}
                       </li>
                     ))}
+
+                    <div className="sizeTooltipContainer">
+                      <ReactTooltip />
+                    </div>
+                    {/* / Modal will come here !!! / */}
+                    <SizeGuideModal />
                   </ul>
                 </div>
               ) : (

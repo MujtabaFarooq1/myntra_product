@@ -1980,3 +1980,145 @@ main .sticky-header {
     }
   }
 }
+
+// %Changed%
+// Added the following code
+.customBtn {
+  background: rgb(95, 95, 95);
+  color: #fff !important;
+  padding: 1rem 0.5rem !important;
+  font-size: 1.3rem !important;
+  transition: all 0.3s;
+}
+
+.customBtn:hover {
+  background: rgb(63, 63, 63);
+}
+
+.ReactModal__Overlay {
+  z-index: 2000;
+
+  // background: ;
+}
+
+// size guide modal stuff -----
+.sizeGuideBrand {
+  &Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.5rem;
+  }
+
+  &__imgContainer {
+    width: 45rem;
+    height: auto;
+    object-fit: cover;
+    margin-right: 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.sizeGuideImageContainer {
+  object-fit: cover;
+  text-align: center;
+  & img {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+.sizeGuideCloseButton {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.customSizeGuideModal {
+  box-sizing: border-box;
+  height: "100vh";
+  background-color: "#fff";
+  width: "50%";
+  margin-left: "auto";
+  top: "0";
+  right: "0";
+  padding: "1rem";
+  min-width: "300px";
+  overflow: auto;
+}
+
+.customSizeGuideModal::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+// Custom Accordion Stuff --------------
+.accordion {
+  font-size: 17px;
+  margin: 0 20px;
+}
+
+.accordion__button {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.accordion__button span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #000;
+  font-size: 15px;
+}
+
+.accordion__button:focus {
+  outline: none;
+}
+
+.accordion__content {
+  padding: 0 20px;
+  opacity: 0;
+  transition: all 0.5s;
+  height: 0;
+  margin: 0;
+  margin-top: -10px;
+  border: 1px solid #f1f1f1;
+  border-top: 0;
+}
+
+.accordion__content.active {
+  height: auto;
+  opacity: 1;
+  padding: 20px;
+}
+
+// Tooltip Stuff -----------------
+.sizeTooltipContainer {
+  .__react_component_tooltip {
+    z-index: 2000;
+    width: 200px;
+  }
+}
