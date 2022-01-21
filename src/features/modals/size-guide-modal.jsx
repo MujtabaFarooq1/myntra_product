@@ -14,7 +14,7 @@ const modalStyles = {
   content: {
     height: "100vh",
     backgroundColor: "#fff",
-    width: "50%",
+    width: "58.8%",
     marginLeft: "auto",
     top: "0",
     right: "0",
@@ -64,20 +64,19 @@ function SizeGuideModal() {
               alt="size guide brand image"
               src={"/images/blog/author.jpg"}
               threshold={500}
-              width="100%"
-              height="100%"
+              width="50%"
+              height="50%"
               effect="blur"
               key={"sizeGuideBrandImage"}
             />
           </div>
           <div className="sizeGuideBrandDescription">
-            <h4> Gucci the fashion house</h4>
+            <h4 className="size-modal-title">Gucci the fashion house</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-              iure perspiciatis aspernatur accusamus labore mollitia culpa est
-              nihil suscipit dolorum ullam! Minima doloribus facilis aperiam
-              fugit nam cum illum. Quidem.
+              HRX by Hrithik Roshan Men Grey Solid Hooded Bomber Jacket<br />
+              this gucci fashion house in the form of the brands
             </p>
+            <p>₹ 1399 <span className="modal-dell-tag"><del> ₹ 3999</del></span> <span className="modal-size-price"> (65% OFF)</span></p>
           </div>
         </div>
 

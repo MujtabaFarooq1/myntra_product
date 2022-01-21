@@ -1132,12 +1132,18 @@ main .sticky-header {
 
   .nav.nav-tabs {
     .nav-link {
-      color: #818692;
+      color: #000000;
+    }
+    .nav-item{
+      text-align: center;
+      margin-right: 0px !important;
+      width: 50% !important;
     }
 
     .nav-item.active {
       .nav-link {
-        color: $primary-color-dark;
+        color: red;
+        border-bottom-color: red !important;
       }
     }
   }
@@ -1146,15 +1152,21 @@ main .sticky-header {
     font-family: $shop-font-family;
     font-size: 1.3rem;
     outline: none;
+    // border-bottom-color: green;
 
-    &:hover,
-    &.active {
-      border-bottom-color: $primary-color-dark;
+   
+    &:active {
+      border-bottom-color: red !important;
+    }
+
+    &:focus {
+      border-bottom-color: red !important;
     }
   }
 
   .nav-item {
     font-size: 1.3rem;
+
   }
 }
 
@@ -2006,18 +2018,19 @@ main .sticky-header {
   &Container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    // align-items: center;
     justify-content: flex-start;
     margin: 1.5rem;
+    margin-bottom: 30px;
   }
 
   &__imgContainer {
-    width: 45rem;
+    width: 16rem;
     height: auto;
     object-fit: cover;
-    margin-right: 1rem;
+    margin-right: 3rem;
     overflow: hidden;
-    border-radius: 50%;
+    // border-radius: 50%;
 
     & img {
       width: 100%;
@@ -2029,11 +2042,13 @@ main .sticky-header {
 .sizeGuideImageContainer {
   object-fit: cover;
   text-align: center;
+  margin-bottom: 30px;
   & img {
     width: 70%;
     height: 400px;
     object-fit: cover;
     margin: 0 auto;
+
   }
 }
 
@@ -2121,4 +2136,24 @@ main .sticky-header {
     z-index: 2000;
     width: 200px;
   }
+}
+
+.modal-dell-tag{
+  color: #A9ABB2;
+}
+.modal-size-price{
+  color: #FF905A;
+  font-weight: bold !important; 
+}
+.modal-first-tab{
+  color: #FE3F6C;
+  font-weight: bold;
+}
+.first-tab-seller{
+  margin-top: 15px;
+}
+.img-header{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 14px;
 }

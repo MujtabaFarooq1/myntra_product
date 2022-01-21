@@ -79,10 +79,16 @@ export default function SizeGuideTab(props) {
                     </tr>
                   </tbody>
                 </table>
+
+                <p className="first-tab-seller">Seller: <span className="modal-first-tab">Fastech Owner</span></p>
+
               </TabPanel>
 
               <TabPanel className="tab-pane fade">
+
+                <p className="img-header">* Garment Measurements in Inches</p>
                 <div className="sizeGuideImageContainer">
+
                   <LazyLoadImage
                     alt="size guide"
                     src={"/images/sizeGuideImg.png"}
