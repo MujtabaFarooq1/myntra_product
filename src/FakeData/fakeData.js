@@ -22,8 +22,8 @@ const fakeData = {
           price: 101,
           sale_price: null,
           size: {
-            name: "Extra Large",
-            size: "XL",
+            name: "XS",
+            size: "XS",
           },
           color: {
             name: "black",
@@ -34,8 +34,8 @@ const fakeData = {
           price: 108,
           sale_price: null,
           size: {
-            name: "Medium",
-            size: "M",
+            name: "S",
+            size: "S",
           },
           color: {
             name: "black",
@@ -46,12 +46,48 @@ const fakeData = {
           price: 105,
           sale_price: null,
           size: {
-            name: "Small",
-            size: "S",
+            name: "M",
+            size: "M",
           },
           color: {
             name: "red",
             color: "#ab6e6e",
+          },
+        },
+        {
+          price: 119,
+          sale_price: null,
+          size: {
+            name: "L",
+            size: "L",
+          },
+          color: {
+            name: "black",
+            color: "#000000",
+          },
+        },
+        {
+          price: 1118,
+          sale_price: null,
+          size: {
+            name: "XL",
+            size: "XL",
+          },
+          color: {
+            name: "black",
+            color: "#000000",
+          },
+        },
+        {
+          price: 117,
+          sale_price: null,
+          size: {
+            name: "XXL",
+            size: "XXL",
+          },
+          color: {
+            name: "black",
+            color: "#000000",
           },
         },
       ],

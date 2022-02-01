@@ -124,9 +124,9 @@ function SearchForm() {
         <i className="icon-search-3"></i>
       </a>
       <form action="#" method="get" onSubmit={(e) => onSubmitSearchForm(e)}>
-        <div className="header-search-wrapper">
+        <div className="header-search-wrapper search_bar_header_AW">
           <input
-            className="form-control"
+            className="form-control custom_search_AW"
             type="text"
             placeholder="Serach for procducts , brands and more"
             aria-label="Search"
@@ -135,7 +135,7 @@ function SearchForm() {
           {/* <input type="search" className="form-control" placeholder="Search..." value={search}
                         required onChange={(e) => onSearchChange(e)} /> */}
           <button
-            className="btn icon-magnifier p-0"
+            className="btn icon-magnifier p-0 search_icon_AW"
             title="search"
             type="submit"
           ></button>

@@ -186,6 +186,7 @@ figure {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 
     &:hover {
       color: $primary-color;
@@ -318,10 +319,12 @@ figure {
   .btn-add-cart,
   .btn-icon-wish,
   .btn-quickview {
-    border: 1px solid #f4f4f4;
-    background: #f4f4f4;
+    // border: 1px solid #f4f4f4;
+    // background: #f4f4f4;
     color: #6f6e6b;
     line-height: 34px;
+    background-color: #EEEEEE !important;
+    border: none;
   }
 
   .btn-icon-wish,
@@ -502,16 +505,17 @@ figure {
   margin: 0 0 12px 1px;
   cursor: pointer;
   position: relative;
-  display: inline-block;
+  display: block;
 
   .product-ratings,
   .ratings {
     position: relative;
-    display: inline-block;
+    // display: inline-block;
     font-size: 11px;
     letter-spacing: 0.1em;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    // text-align: center !important;
   }
 
   .product-ratings {
@@ -520,6 +524,8 @@ figure {
     &:before {
       content: "";
       color: rgba(0, 0, 0, 0.16);
+    // text-align: center !important;
+
     }
 
     &:hover {
@@ -534,12 +540,16 @@ figure {
     position: absolute;
     top: 0;
     left: 0;
+    // text-align: center !important;
     white-space: nowrap;
     overflow: hidden;
 
     &:before {
       content: "";
       color: #6a6a6d;
+    // text-align: center !important;
+    // display: none;
+
     }
   }
 }
@@ -993,7 +1003,7 @@ figure {
     text-overflow: ellipsis;
     overflow: hidden;
     width: calc(100% - 20px);
-    text-align: left;
+    text-align: center;
   }
 
   .product-title {
@@ -2122,4 +2132,41 @@ figure {
       right: 1.1rem;
     }
   }
+}
+.product_description_icons{
+  font-size: 16px;
+    margin-left: 5px;
+    // &:hover{
+    //   color: #FE3F6C;
+    // }
+}
+.description_link{
+  font-weight: 600;
+  &:hover{
+   text-decoration: underline;
+  }
+}
+.rating_AW, .price_box_AW{
+  width: 100%;
+  text-align: center;
+}
+.button_container_AW{
+  text-align: center;
+  width: 100%;
+}
+.btn_options{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+.quick_links{
+  color: black;
 }

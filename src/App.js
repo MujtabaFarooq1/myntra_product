@@ -18,6 +18,7 @@ import ScrollToTop from "./features/scroll-to-top";
 import BlogsPage from "./pages/BlogsPage";
 import BlogPage from "./pages/BlogPage";
 import BrandPage from "./pages/BrandPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -48,6 +49,8 @@ function App() {
           <Route path="/blogs/:blogId" element={<BlogPage />} />
 
           <Route path="/brands" element={<BrandPage />} />
+
+          <Route path="/Dashboard" element={<Dashboard />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

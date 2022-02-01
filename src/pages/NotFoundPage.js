@@ -1,4 +1,5 @@
 import ALink from "../layouts/common/ALink";
+import "../sass/components/_nofound.scss";
 
 export default function NotFoundPage() {
   return (
@@ -16,7 +17,32 @@ export default function NotFoundPage() {
         </ol>
       </nav>
 
-      <section className="http-error">
+      <div className="row justify-content-center">
+        <div className="col-12 text-center mt-4 mb-4">
+          <p>You searched for <b className="blu-name">men-trackpants45678</b></p>
+          <img className="not_found_img" src="/images/404-page.png" alt="" />
+          <br />
+
+          <h2 className="not_found_heading">We couldn't find any matches!</h2>
+          <p>Please check the spelling or try searching something else</p>
+
+          <div className="row justify-content-center mt-5 mb-3">
+            <div className="col-12 text-center">
+              <div className="search-box">
+                <input type="text" className="search-input" placeholder="Shoes, T-shirts, Tops etc." />
+
+                <button className="search-button">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p><b className="pupular-search">Popular searches:</b> Nike Shoes,Woodland Shoes,Adidas Shoes,Titan Watches,Fila Shoes,Puma Shoes,Fastrack Watches</p>
+        </div>
+      </div>
+
+      {/* <section className="http-error">
         <div className="row justify-content-center py-3">
           <div className="col-md-7 text-center">
             <div className="http-error-main">
@@ -59,7 +85,7 @@ export default function NotFoundPage() {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

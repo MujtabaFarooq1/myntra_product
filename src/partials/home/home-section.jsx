@@ -40,13 +40,13 @@ function HomeSection() {
                 <h3 className="m-b-3">70% Off</h3>
                 <h5 className="d-inline-block mb-0">
                   <span>Starting At</span>
-                  <b className="coupon-sale-text text-white bg-secondary align-middle">
+                  <b className="coupon-sale-text align-middle banner_price_AW">
                     <sup>$</sup>
                     <em className="align-text-top">199</em>
                     <sup>99</sup>
                   </b>
                 </h5>
-                <ALink href="/shop" className="btn btn-dark btn-lg">
+                <ALink href="/shop" className="btn btn-lg banner_shop_now_AW">
                   Shop Now!
                 </ALink>
               </>
@@ -74,7 +74,7 @@ function HomeSection() {
                 <h3 className="m-b-2">20% off</h3>
                 <h3 className="mb-2 heading-border">Accessories</h3>
                 <h2 className="text-transform-none m-b-4">Summer Sale</h2>
-                <ALink href="/shop" className="btn btn-dark btn-block">
+                <ALink href="/shop" className="btn btn-block banner_shop_all_sale_AW">
                   Shop All Sale
                 </ALink>
               </div>

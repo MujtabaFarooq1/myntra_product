@@ -21,6 +21,7 @@ import { shopColors, shopSizes } from "../../../utils/data/shop";
 import ProductThree from "../../../features/products/product-three";
 
 import fakeData from "../../../FakeData/fakeData";
+import SearchToggle from "../../../features/products/searchToggle";
 
 const TreeNode = (props) => {
   return (
@@ -60,6 +61,8 @@ const brands = [
 ];
 
 function ShopSidebarOne(props) {
+
+
   // const router = useRouter();
   const location = useLocation();
   const navigate = useNavigate();
@@ -136,8 +139,8 @@ function ShopSidebarOne(props) {
   function filterByCategory(selected) {
     navigate(
       location.pathname.replace("[grid]", query?.grid) +
-        "?category=" +
-        (selected.length ? selected[0] : "")
+      "?category=" +
+      (selected.length ? selected[0] : "")
     );
   }
 
@@ -190,18 +193,22 @@ function ShopSidebarOne(props) {
     <>
       <div className="sidebar-overlay" onClick={closeSidebar}></div>
       <aside
-        className={`sidebar-shop col-lg-3  mobile-sidebar skeleton-body skel-shop-products ${
-          true ? "loaded" : ""
-        } ${props.display === "none" ? "d-lg-none" : ""} ${
-          props.right ? "" : "order-lg-first"
-        }`}
+        className={`sidebar-shop col-lg-3  mobile-sidebar skeleton-body skel-shop-products ${true ? "loaded" : ""
+          } ${props.display === "none" ? "d-lg-none" : ""} ${props.right ? "" : "order-lg-first"
+          }`}
       >
         <StickyBox className="sidebar-wrapper" offsetTop={70}>
           <div className="widget">
             <SlideToggle>
               {({ onToggle, setCollapsibleElement, toggleState }) => (
                 <>
-                  <h3 className="widget-title">
+
+                  <div className="SearchToggleWrapper">
+                    <SearchToggle />
+                  </div>
+
+
+                  <h3 className="widget-title mt-1">
                     <a
                       href="/"
                       onClick={(e) => {
@@ -254,16 +261,16 @@ function ShopSidebarOne(props) {
             query?.colors ||
             query?.min_price ||
             query?.max_price) && (
-            <div className="widget">
-              <ALink
-                href={{ query: { grid: query?.grid } }}
-                scroll={"false "}
-                className="btn btn-primary reset-filter"
-              >
-                Reset All Filters
-              </ALink>
-            </div>
-          )}
+              <div className="widget">
+                <ALink
+                  href={{ query: { grid: query?.grid } }}
+                  scroll={"false "}
+                  className="btn btn-primary reset-filter"
+                >
+                  Reset All Filters
+                </ALink>
+              </div>
+            )}
 
           <div className="widget overflow-hidden">
             <SlideToggle>
@@ -320,43 +327,43 @@ function ShopSidebarOne(props) {
             </SlideToggle>
           </div>
 
-          <div className="widget widget-color">
-            {/* Loading Is False */}
-            {false ? (
-              <div className="skel-widget"></div>
-            ) : (
-              <SlideToggle>
-                {({ onToggle, setCollapsibleElement, toggleState }) => (
-                  <>
-                    <h3 className="widget-title">
-                      <a
-                        className={
-                          toggleState === "COLLAPSED" ? "collapsed" : ""
-                        }
-                        href="/"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          onToggle();
-                        }}
-                      >
-                        Color
-                      </a>
-                    </h3>
-                    <div
-                      className="overflow-hidden"
-                      ref={setCollapsibleElement}
+
+          <div className="widget">
+            <SlideToggle>
+              {({ onToggle, setCollapsibleElement, toggleState }) => (
+                <>
+                  <h3 className="widget-title">
+                    <a
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onToggle();
+                      }}
+                      className={toggleState === "COLLAPSED" ? "collapsed" : ""}
                     >
+                      Colors
+                    </a>
+                  </h3>
+
+                  {/* this is custom checkout for colors  */}
+
+
+
+                  <div className="overflow-hidden" ref={setCollapsibleElement}>
+                    <div className="widget-body">
                       <div className="widget-body pb-0">
-                        <ul className="config-swatch-list">
+                        <ul className="config-swatch-list colors_list_AW">
                           {shopColors.map((item, index) => (
+
                             <li
                               className={
-                                containsAttrInUrl("colors", item.name)
+                                containsAttrInUrl("colors rounded-colors", item.name)
                                   ? "active"
                                   : ""
                               }
                               key={`color-${index}`}
                             >
+                              <input type="checkbox" className="colors_checkbox" />
                               <ALink
                                 href={{
                                   query: {
@@ -365,19 +372,23 @@ function ShopSidebarOne(props) {
                                     colors: getUrlForAttrs("colors", item.name),
                                   },
                                 }}
-                                style={{ backgroundColor: item?.color }}
+                                style={{ backgroundColor: item?.color, }}
                                 scroll={"false "}
-                              ></ALink>
+                              >
+                                <div className="colors_item_name_AW">{item.name}</div>
+                              </ALink>
                             </li>
                           ))}
                         </ul>
                       </div>
                     </div>
-                  </>
-                )}
-              </SlideToggle>
-            )}
+                  </div>
+                </>
+              )}
+            </SlideToggle>
           </div>
+
+
 
           <div className="widget widget-size">
             <SlideToggle>
@@ -439,3 +450,4 @@ function ShopSidebarOne(props) {
 // );
 
 export default ShopSidebarOne;
+

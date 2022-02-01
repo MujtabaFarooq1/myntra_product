@@ -323,6 +323,10 @@
 	margin-bottom: .6rem;
 	padding: 1.4rem;
 	font-family: $font-family;
+	background-color: #FE3F6C !important;
+	border-color: #FE3F6C !important;
+	border-radius: 5px;
+
 }
 
 .login-form-container {
@@ -361,6 +365,9 @@
 			background-color: #f4f4f4;
 			font-size: 1.3rem;
 			font-family: $font-family;
+			border-radius: 5px;
+			background-color: #FE3F6C;
+			color: white;
 
 			&:hover {
 				background-color: $primary-color;
@@ -493,6 +500,9 @@
 
 		.btn.btn-sm {
 			height: 33px;
+			border-radius: 5px !important;
+			background-color: #FE3F6C !important;
+			color: white;
 		}
 	}
 

@@ -1,0 +1,35 @@
+.sideBarItemSearchWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideBarItemSearchWrapper .sideBarItemSearchBtn {
+  border: none;
+  border-radius: 5px;
+  border-radius: 15px;
+  height: 27px;
+  outline: none;
+  width: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.sideBarItemSearchWrapper .sideBarItemSearch {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  width: 142%;
+  background-color: #EFEFEF;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  border-radius: 15px;
+  height: 27px;
+}
+.sideBarItemSearchWrapper .search_toggle_icons {
+  color: #A5A6B2;
+}
+
+.SearchToggleWrapper {
+  margin-top: -10px;
+}

@@ -55,11 +55,11 @@ function MainMenu({ router }) {
                   </ul>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 mega_menu_next_bar">
                   <ALink href="#" className="nolink">
                     VARIATION 2
                   </ALink>
-                  <ul className="submenu">
+                  <ul className="submenu mega_menu_next_bar">
                     {mainMenu.shop.variation2.map((variations, index) => (
                       <li key={"menu-item" + index}>
                         <ALink href={`${variations.url}`}>
@@ -120,11 +120,11 @@ function MainMenu({ router }) {
                   </ul>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 mega_menu_next_bar">
                   <ALink href="#" className="nolink">
                     PRODUCT LAYOUTS
                   </ALink>
-                  <ul className="submenu">
+                  <ul className="submenu mega_menu_next_bar">
                     {mainMenu.product.layout.map((variations, index) => (
                       <li key={"menu-item" + index}>
                         <ALink href={`${variations.url}`}>

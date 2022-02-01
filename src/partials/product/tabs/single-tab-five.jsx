@@ -17,7 +17,7 @@ export default function SingleTabFive(props) {
   }
 
   return (
-    <>
+    <div className="review-wrapper">
       <div className="skel-pro-tabs"></div>
       {product && (
         <Tabs
@@ -26,13 +26,13 @@ export default function SingleTabFive(props) {
           selectedTabPanelClassName="show"
         >
           <div className="container">
-            <TabList className="nav nav-tabs">
+            {/* <TabList className="nav nav-tabs">
               <Tab className="nav-item">
                 <ALink href="#" className="nav-link">
                   Reviews ({product.reviews})
                 </ALink>
               </Tab>
-            </TabList>
+            </TabList> */}
 
             <TabPanel className="tab-pane fade">
               <div className="product-reviews-content">
@@ -195,7 +195,7 @@ export default function SingleTabFive(props) {
 
                         <input
                           type="submit"
-                          className="btn btn-primary"
+                          className="btn btn-primary review-submit-btn"
                           value="Submit"
                         />
                       </form>
@@ -207,6 +207,6 @@ export default function SingleTabFive(props) {
           </div>
         </Tabs>
       )}
-    </>
+    </div>
   );
 }

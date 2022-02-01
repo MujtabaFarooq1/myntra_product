@@ -107,6 +107,9 @@
 			font-weight: 700;
 			height: 43px;
 			letter-spacing: -.018em;
+			border-radius: 5px;
+			// background-color: #FE3F6C;
+			// color: white;
 
 			& + .btn {
 				margin-left: 1rem;
@@ -338,6 +341,9 @@ i.cart-empty {
 		font-size: 1.5rem;
 		letter-spacing: -.015em;
 		padding: 1em 0;
+		background-color: #FE3F6C !important;
+		border-color: #FE3F6C !important;
+		border-radius: 5px;
 
 		i {
 			margin-left: 1.5rem;

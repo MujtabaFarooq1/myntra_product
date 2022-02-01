@@ -162,3 +162,28 @@
 		margin-bottom: 0;
 	}
 }
+
+.category_card_wrapper_AW:hover{
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+	// -webkit-transform: scale(1.01, 1.01);
+	 transform: scale(1.01, 1.01);
+	//  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	 transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+  .detail_product_Wrapper_AW{
+	 padding-right: 7px !important;
+	 padding-left: 7px !important;
+  }
+
+  .colors_list_AW{
+     display: inline !important;
+  }
+  .colors_item_name_AW{
+	color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 3px;
+    font-size: 14px;
+  }
+  

@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer bg-dark position-relative">
       <div className="footer-middle">
         <div className="container position-static">
-          <div className="footer-ribbon">Get in touch</div>
+          {/* <div className="footer-ribbon">Get in touch</div> */}
 
           <div className="row">
             <div className="col-lg-2 col-sm-6 pb-2 pb-sm-0">

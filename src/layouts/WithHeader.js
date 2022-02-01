@@ -56,12 +56,12 @@ function WithHeader({ children, hideQuickView, hideVideo }) {
 
         {/* Here is the notification component */}
         {showTopNotice ? (
-          <div className="top-notice bg-dark text-white">
+          <div className="top-notice text-white">
             <div className="container text-center">
               <h5 className="d-inline-block mb-0">
                 Get Up to <b>40% OFF</b> New-Season Styles
               </h5>
-              <ALink href="/shop" className="category mr-1">
+              <ALink href="/shop" className="category mr-2">
                 MEN
               </ALink>
               <ALink href="/shop" className="category mr-3">

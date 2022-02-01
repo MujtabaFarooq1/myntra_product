@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import ReactTooltip from "react-tooltip";
+import Description from "../../../features/product-description";
 
 // Import Actions
 // import { actions as WishlistAction } from "../../../../store/wishlist";
@@ -19,6 +20,7 @@ import ALink from "../../../layouts/common/ALink";
 import { cartActions } from "../../../app/reducers/cart/cartSlice";
 import { wishListActions } from "../../../app/reducers/wishlist/wishlistSlice";
 import SizeGuideModal from "../../../features/modals/size-guide-modal";
+import description from "../../../features/product-description";
 
 function ProductDetailOne(props) {
   // const router = useRouter();
@@ -259,7 +261,7 @@ function ProductDetailOne(props) {
             )}
 
             <li>
-              CATEGORY:{" "}
+              <b>CATEGORY</b>{" "}
               {product.categories.map((item, index) => (
                 <React.Fragment key={`single-cat-${index}`}>
                   <strong>
@@ -280,7 +282,7 @@ function ProductDetailOne(props) {
 
             {!product.tags == null && product.tags.length > 0 ? (
               <li>
-                TAGs:{" "}
+                <b>TAGs</b>{" "}
                 {product.tags.map((item, index) => (
                   <React.Fragment key={`single-cat-${index}`}>
                     <strong>
@@ -304,14 +306,13 @@ function ProductDetailOne(props) {
             <div className="product-filters-container">
               {attrs.colors.length > 0 ? (
                 <div className="product-single-filter d-flex align-items-center">
-                  <label>Color:</label>
+                  <label><b>Color</b></label>
                   <ul className="config-size-list config-color-list config-filter-list">
                     {attrs.colors.map((item, index) => (
                       <li
                         key={`filter-color-${index}`}
-                        className={`${item.name === color ? "active" : ""} ${
-                          isDisabled("color", item.name) ? "disabled" : ""
-                        }`}
+                        className={`${item.name === color ? "active" : ""} ${isDisabled("color", item.name) ? "disabled" : ""
+                          }`}
                       >
                         {item.thumb ? (
                           <a
@@ -332,7 +333,7 @@ function ProductDetailOne(props) {
                         ) : (
                           <a
                             href="/"
-                            className="filter-color border-0"
+                            className="filter-color border-0 custom_color_check_AW"
                             style={{ backgroundColor: item.color }}
                             onClick={(e) => selectColor(item.name, e)}
                           >
@@ -349,20 +350,19 @@ function ProductDetailOne(props) {
 
               {attrs.sizes.length > 0 ? (
                 <div className="product-single-filter d-flex align-items-center">
-                  <label>Size:</label>
+                  <label><b>Size</b></label>
 
                   <ul className="config-size-list d-inline-block">
                     {attrs.sizes.map((item, index) => (
                       <li
                         key={`filter-size-${index}`}
-                        className={`${item.size === size ? "active" : ""} ${
-                          isDisabled("size", item.size) ? "disabled" : ""
-                        }`}
+                        className={`${item.size === size ? "active" : ""} ${isDisabled("size", item.size) ? "disabled" : ""
+                          }`}
                       >
                         {item.thumb ? (
                           <a
                             href="/"
-                            className="filter-thumb p-0"
+                            className="filter-thumb p-0 "
                             onClick={(e) => selectSize(item.size, e)}
                           >
                             <LazyLoadImage
@@ -378,7 +378,7 @@ function ProductDetailOne(props) {
                         ) : (
                           <a
                             href="/"
-                            className="d-flex align-items-center justify-content-center"
+                            className="d-flex align-items-center justify-content-center sizes_circle_AW"
                             onClick={(e) => selectSize(item.size, e)}
                           >
                             <span
@@ -520,13 +520,12 @@ function ProductDetailOne(props) {
 
                     <a
                       href="#"
-                      className={`btn btn-dark add-cart mr-2 ${
-                        attrs.sizes.length > 0 || attrs.colors.length > 0
-                          ? attrs.sizes.length > 0 && attrs.colors.length
-                            ? ""
-                            : "disabled"
-                          : ""
-                      }`}
+                      className={`btn btn-dark add-cart mr-2 ${attrs.sizes.length > 0 || attrs.colors.length > 0
+                        ? attrs.sizes.length > 0 && attrs.colors.length
+                          ? ""
+                          : "disabled"
+                        : ""
+                        }`}
                       title="Add To Cart"
                       onClick={onAddCartClick}
                     >
@@ -587,11 +586,10 @@ function ProductDetailOne(props) {
 
             <a
               href="#"
-              className={`btn btn-dark add-cart shopping-cart mr-2 ${
-                attrs.sizes.length > 0 || attrs.colors.length > 0
-                  ? "disabled"
-                  : ""
-              }`}
+              className={`btn btn-dark add-cart shopping-cart mr-2 ${attrs.sizes.length > 0 || attrs.colors.length > 0
+                ? "disabled"
+                : ""
+                }`}
               title="Add To Cart"
               onClick={onAddCartClick}
             >
@@ -599,7 +597,11 @@ function ProductDetailOne(props) {
             </a>
           </div>
 
+          <Description />
+
+
           <hr className="divider mb-0 mt-0" />
+
 
           <div className="product-single-share mb-3">
             <label className="sr-only">Share:</label>
@@ -629,9 +631,8 @@ function ProductDetailOne(props) {
 
             <a
               href="/"
-              className={`btn-icon-wish add-wishlist ${
-                isInWishlist() ? "added-wishlist" : ""
-              }`}
+              className={`btn-icon-wish add-wishlist ${isInWishlist() ? "added-wishlist" : ""
+                }`}
               onClick={onWishlistClick}
               title={`${isInWishlist() ? "Go to Wishlist" : "Add to Wishlist"}`}
             >

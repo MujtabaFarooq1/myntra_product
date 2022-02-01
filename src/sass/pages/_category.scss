@@ -298,6 +298,9 @@ span.toggle {
     font-weight: 400;
     line-height: 1.6rem;
     text-decoration: none;
+    &:hover{
+      background-color: #fa6285;
+    }
   }
 
   li {
@@ -327,6 +330,7 @@ span.toggle {
     font-size: 1.2rem;
     font-weight: 600;
     font-family: $font-family;
+    border-radius: 5px;
   }
 
   .filter-price-text {
@@ -378,6 +382,7 @@ span.toggle {
         margin: 3px 6px 3px 0;
         box-shadow: none;
         text-transform: capitalize;
+        border-radius: 50px;
       }
     }
   }
@@ -1157,3 +1162,65 @@ span.toggle {
     border: 1px solid rgb(43, 43, 43);
   }
 }
+
+
+// .search {
+//   width: 12em;
+//   height: 2em;
+//   padding: 0;
+//   margin: 0;
+//   line-height: 2em;
+//   background-color: #333;
+//   position: relative;
+//   transition: all .25s linear;
+//   input {
+//     width: 9.5em;
+//     height: 2em;
+//     line-height: 1em;
+//     padding: 0 0 0 .5em;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+//     font-size: 1em;
+//     color: white;
+//     float: left;
+//     transition: all .25s linear;
+//   }
+//   a {
+//     width: 2em;
+//     height: 2em;
+//     line-height: 2em;
+//     padding: 0;
+//     color: #ccc;
+//     text-align: center;
+//     text-decoration: none;
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     transition: all .25s linear;
+//     &:before {
+//       content: "\f002";
+//       font-family: FontAwesome;
+//       font-style: normal;
+//     }
+//     &:hover {
+//       color: #eee;
+//     }
+//   }
+//   &.collapsed {
+//     width: 2em;
+//     margin-left: 10em;
+//     input {
+//       width: 0;
+//     }
+//     a {
+//       color: #999;
+//       &:hover {
+//         color: #bbb;
+//       }
+//     }
+//   }
+// }
+
+

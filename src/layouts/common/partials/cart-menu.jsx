@@ -67,7 +67,8 @@ function CartMenu(props) {
         className="dropdown-toggle dropdown-arrow cart-toggle"
         onClick={toggleCart}
       >
-        <i className="minicart-icon"></i>
+        {/* <i className="minicart-icon"></i> */}
+        <i class="far fa-shopping-bag minicart-icon"></i>
         <span className="cart-count badge-circle">
           {getQtyTotal(cartItems)}
         </span>

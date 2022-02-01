@@ -162,6 +162,14 @@ section {
 
   .btn {
     letter-spacing: 0.01em;
+    // border: 2px solid #FE406C;
+    border: none;
+    outline: none;
+    &:hover{
+      background-color: #fa6285;
+      border: none;
+    outline: none;
+    }
   }
 
   .banner-layer {
@@ -206,6 +214,9 @@ section {
   .btn {
     font-size: 1em;
     letter-spacing: 0.15em;
+    &:hover{
+      background-color: #fa6285;
+    }
   }
 }
 

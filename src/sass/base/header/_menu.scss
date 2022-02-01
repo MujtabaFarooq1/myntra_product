@@ -277,10 +277,11 @@
     display: inline-block;
     padding-bottom: 11px;
     font-weight: 700;
+    color: #FE406C;
 
     @include css(font-family, menu, mega, family);
     @include css(font-size, menu, mega, size);
-    @include css(color, menu, nolink, color);
+    // @include css(color, menu, nolink, color);
     @include css(background, menu, nolink, background);
   }
 
@@ -435,7 +436,10 @@
     }
 
     li:hover a {
-      @include css(color, menu, main, mega, active-color);
+      // @include css(color, menu, main, mega, active-color);
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
       @include css(background, menu, main, mega, active-background);
     }
   }
@@ -622,7 +626,11 @@
   color: #fe3f6c;
   font-size: 10px;
   position: absolute;
-  top: 5px;
-  right: 0px;
+  top: 15px;
+  right: -27px;
   text-transform: uppercase;
+}
+
+.mega_menu_next_bar{
+  background-color: #FBFBFB !important;
 }

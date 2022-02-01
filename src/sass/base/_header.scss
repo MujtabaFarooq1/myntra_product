@@ -64,6 +64,7 @@
         padding: 0.9rem 2rem 1rem,
         font-size: 1.3rem,
         link-background: #151719,
+        
       ),
       icon: (
         size: 2.7rem,
@@ -377,6 +378,7 @@ header {
 
 // 2.6) Top Notice
 .top-notice {
+  background-color: #FE3F6C;
   position: relative;
   @if (get(header, top-notice, padding)) {
     padding: get(header, top-notice, padding) 2rem;
@@ -405,6 +407,9 @@ header {
   }
 
   .category {
+    border-radius: 5px;
+    border: none;
+    // background-color: black;
     display: inline-block;
     padding: 0.3em 0.8em 0.4em;
     @include css(background, header, top-notice, link-background);
@@ -458,13 +463,13 @@ header {
 .minicart-icon {
   display: inline-block;
   vertical-align: middle;
-  width: 25px;
-  height: 20px;
+  width: 20px;
+  height: 15px;
   border: 2px solid $primary-color-dark;
   border-radius: 0 0 5px 5px;
   position: relative;
   opacity: 0.9;
-  margin: 6px 3px 0;
+  margin: 2px 3px 0;
   z-index: 1;
 
   &::before {
@@ -553,3 +558,51 @@ header.is-sticky {
   -webkit-animation-name: fixedHeader;
   animation-name: fixedHeader;
 }
+
+.search_bar_header_AW{
+  width: 55rem !important;
+  // border-radius: 5px !important;
+   @media screen and (max-width: 1199px) {
+     width: 35rem !important;
+   }
+}
+.custom_search_AW{
+  border: 1px solid #F5F5F6 !important;
+  border-radius: 5px !important;
+  background-color: #F5F5F6 !important;
+  &:focus{
+    border: 1px solid #DCDCDC !important;
+    background-color: white !important;
+  }
+}
+.search_icon_AW{
+  position: relative !important;
+  right: 43px !important;
+  border: transparent !important;
+  height: 34px !important;
+  top: 3px !important;
+  background-color: transparent !important;
+}
+.banner_shop_now_AW{
+  background-color: #FE3F6C;
+  border-radius: 5px;
+  color: white !important;
+  padding: 14px !important;
+  font-size: 22px !important;
+}
+.banner_price_AW{
+  background-color: #FE3F6C;
+  border-radius: 5px;
+  color: white !important;
+}
+.banner_shop_all_sale_AW{
+  background-color: #FE3F6C;
+  border-radius: 5px;
+  color: white !important;
+  padding: 14px !important;
+  font-size: 22px !important;
+}
+// .sale_banner_AW{
+//   background: #FE3F6C, url(../);
+// }
+// ./images/home/banners/banner-4.jpg

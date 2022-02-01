@@ -40,9 +40,8 @@ export default function Header({ adClass = "" }) {
   return (
     <header ref={headerRef} className={`header ${adClass}`}>
       <div
-        className={`header-middle text-dark sticky-header ${
-          true ? "mobile-sticky" : ""
-        }`}
+        className={`header-middle text-dark sticky-header ${true ? "mobile-sticky" : ""
+          }`}
       >
         <div className="container">
           <button
@@ -65,11 +64,13 @@ export default function Header({ adClass = "" }) {
             <SearchForm />
 
             <ALink href="/pages/login" className="header-icon header-icon-user">
-              <i className="icon-user-2"></i>
+              {/* <i className="icon-user-2"></i> */}
+              <i class="far fa-user"></i>
             </ALink>
 
             <ALink href="/pages/wishlist" className="header-icon">
-              <i className="icon-wishlist-2"></i>
+              {/* <i className="icon-wishlist-2"></i> */}
+              <i class="far fa-heart"></i>
             </ALink>
 
             <CartMenu />

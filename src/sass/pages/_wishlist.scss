@@ -35,6 +35,7 @@
 		background: #f4f4f4;
 		color: #222529;
 		font-family: $font-family;
+		border-radius: 5px;
 
 		&:hover {
 			background-color: $primary-color;
@@ -46,6 +47,9 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		min-width: 160px;
+		background-color: #FE3F6C !important;
+		border-radius: 5px;
+		border-color: #FE3F6C;
 	}
 
 	.new-price {

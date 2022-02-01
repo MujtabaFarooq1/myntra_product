@@ -56,6 +56,11 @@ export default function LoginPage() {
                     required
                   />
 
+
+                  <button type="submit" className="btn btn-dark btn-md w-100 mt-2">
+                    LOGIN
+                  </button>
+
                   <div className="form-footer">
                     <div className="custom-control custom-checkbox mb-0">
                       <input
@@ -78,9 +83,6 @@ export default function LoginPage() {
                       Forgot Password?
                     </ALink>
                   </div>
-                  <button type="submit" className="btn btn-dark btn-md w-100">
-                    LOGIN
-                  </button>
                 </form>
               </div>
               <div className="col-md-6">

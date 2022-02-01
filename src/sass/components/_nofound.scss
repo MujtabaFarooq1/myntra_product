@@ -1,0 +1,56 @@
+.not_found_img{
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.blu-name{
+    color: #3466E8;
+}
+.not_found_heading{
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 32px !important;
+}
+.search-box{
+    width: 100%;
+    position: relative;
+    display: inline !important;
+    height: 40px;
+  
+  }
+  .search-input{
+    display: inline !important;
+
+      height: 40px;
+    // display: inline;
+    width: 40%;
+    /* padding: 10px; */
+    border: 1px solid #CCCCCC;
+    /* border-radius: 10px 0 0 10px; */
+    border-right: none;
+    outline: none;
+    font-size: 20px;
+    color: black;
+    background: none;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .search-button{
+      display: inline;
+    text-align: center;
+    height: 40px;
+    width: 85px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #CCCCCC;
+    /* border-radius: 0 10px 10px 0; */
+    // border-left: none;
+    background: none;
+    border-left: 1px solid #CCCCCC;
+    color: #3466e8;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .pupular-search{
+      font-weight: 600;
+  }

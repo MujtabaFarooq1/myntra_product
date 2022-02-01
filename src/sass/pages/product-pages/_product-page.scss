@@ -142,7 +142,7 @@ $product-single-thumbnail-gutter: 3px !default;
 
   figure {
     margin-right: 0.7rem;
-    max-width: 75px;
+    // max-width: 75px;
     width: 100%;
   }
 
@@ -179,6 +179,7 @@ $product-single-thumbnail-gutter: 3px !default;
           content: "\f00c";
           font-weight: 600;
           font-size: 1.6rem;
+          // background-color: #0cc485;
         }
       }
     }
@@ -192,6 +193,9 @@ $product-single-thumbnail-gutter: 3px !default;
     .add-cart {
       display: inline-flex;
       align-items: center;
+      background-color: #FE3F6C !important;
+      border-radius: 5px !important;
+      border-color: #FE3F6C !important;
 
       &:before {
         content: "\e8ba";
@@ -713,6 +717,8 @@ main .sticky-header {
 
   a {
     color: inherit;
+    font-weight: 500;
+    font-size: 11px;
 
     &:hover {
       text-decoration: underline;
@@ -767,7 +773,8 @@ main .sticky-header {
 
     a {
       margin: 3px 6px 3px 0;
-      min-width: 3.2rem;
+      // min-width: 3.2rem;
+      // min-height: 3.2rem;
       height: 2.6rem;
       border: 1px solid #eee;
       color: inherit;
@@ -775,10 +782,13 @@ main .sticky-header {
       font-weight: 500;
       line-height: 2.6rem;
       background-color: #fff;
+      border-radius: 50%;
+      // padding: 20px;
+     
 
       &:hover {
         border-color: $primary-color;
-        background-color: $primary-color;
+        // background-color: $primary-color;
         color: #fff;
       }
 
@@ -792,6 +802,7 @@ main .sticky-header {
       &.filter-color {
         height: 2.8rem;
         min-width: 2.8rem;
+        border-radius: 50px;
       }
 
       &.filter-thumb {
@@ -1323,6 +1334,7 @@ main .sticky-header {
   padding-top: 2px;
   padding-bottom: 2.5rem;
   line-height: 1.92;
+  cursor: pointer;
 
   .required {
     color: $primary-color-dark;
@@ -1409,6 +1421,7 @@ main .sticky-header {
 
 .add-product-review {
   padding-top: 5px;
+  cursor: pointer;
 
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
     top: 4px;
@@ -1996,16 +2009,18 @@ main .sticky-header {
 // %Changed%
 // Added the following code
 .customBtn {
-  background: rgb(95, 95, 95);
+  background: #FE3F6C;
   color: #fff !important;
   padding: 1rem 0.5rem !important;
   font-size: 1.3rem !important;
   transition: all 0.3s;
+  border-radius: 5px;
+  font-weight: bold !important;
 }
 
-.customBtn:hover {
-  background: rgb(63, 63, 63);
-}
+// .customBtn:hover {
+//   background: rgb(63, 63, 63);
+// }
 
 .ReactModal__Overlay {
   z-index: 2000;
@@ -2095,6 +2110,7 @@ main .sticky-header {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .accordion__button span {
@@ -2105,7 +2121,7 @@ main .sticky-header {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background: #000;
+  background: #FE3F6C;
   font-size: 15px;
 }
 
@@ -2135,6 +2151,10 @@ main .sticky-header {
   .__react_component_tooltip {
     z-index: 2000;
     width: 200px;
+    // margin-bottom: 20px !important;
+    background-color: white !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #848484 !important;
   }
 }
 
@@ -2156,4 +2176,61 @@ main .sticky-header {
   text-align: center;
   margin-bottom: 40px;
   font-size: 14px;
+}
+.sizes_circle_AW{
+  border-radius: 50% !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  height: 40px !important;
+  width: 40px !important;
+  color: #848484 !important;
+
+  &:hover{
+    color: #848484 !important;
+  }
+}
+.review-wrapper{
+  cursor: pointer;
+}
+.review-submit-btn{
+  border-radius: 5px !important;
+}
+// .category-cards{
+//   display: flex;
+//   justify-content: space-around;
+// }
+// .card-item{
+//   width: 250px;
+//     border: 1px solid black;
+// }
+.featured_product_cards{
+  border: 1px solid red;
+}
+.list-categoty{
+  margin-top: -12px;
+}
+.category-td{
+  border-bottom: 1px solid #dee2e6 !important;
+  border-top: none !important;
+  position: relative;
+  padding-bottom: 7px !important;
+    padding-top: 27px !important;
+    // margin-top: 5px !important;
+}
+.cat-td-name{
+  position: absolute;
+  top: 7px;
+  // left: opx;
+  left: 7px;
+  font-size: 11px;
+}
+.cat-td-prop{
+  margin-bottom: -10px !important;
+}
+.colors_checkbox{
+  height: 20px;
+  width: 20px;
+  margin-right: 7px;
 }

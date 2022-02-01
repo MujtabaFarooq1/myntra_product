@@ -33,6 +33,9 @@
         .btn {
             font-family: $font-family;
             font-size: 1.6rem;
+            background-color: #FE3F6C !important;
+            border-color: #FE3F6C !important;
+            border-radius: 5px;
         }
 
         .form-footer {
@@ -111,6 +114,7 @@
             font-family: $font-family;
             font-size:1.4rem;
             line-height: 21px;
+            border-radius: 5px;
         }
     }
 }
