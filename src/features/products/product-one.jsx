@@ -149,7 +149,7 @@ function ProductOne(props) {
             <ProductCountdown product={product} />
           )}
 
-          
+
         </figure>
 
         <div className="product-details detail_product_Wrapper_AW">
@@ -158,11 +158,10 @@ function ProductOne(props) {
               {product.categories
                 ? product.categories.map((item, index) => (
                   <React.Fragment key={item.slug + "-" + index}>
-                    <ALink
-                      href={{
-                        pathname: "/shop",
-                        query: { category: item.slug },
-                      }}
+                    <ALink href={{
+                      pathname: "/shop",
+                      query: { category: item.slug },
+                    }}
                     >
                       {item.name}
                     </ALink>
@@ -170,18 +169,20 @@ function ProductOne(props) {
                   </React.Fragment>
                 ))
                 : ""}
-             </div>
+            </div>
 
-            <a
-              href="/"
-              className={`btn-icon-wish ${isInWishlist() ? "added-wishlist" : ""
-                }`}
-              onClick={onWishlistClick}
-              title={`${isInWishlist() === true ? "Go to Wishlist" : "Add to Wishlist"
-                }`}
-            >
-              <i className="icon-heart"></i>
-            </a>
+            <span className="hidden-wishlist">
+              <a
+                href="/"
+                className={`btn-icon-wish ${isInWishlist() ? "added-wishlist" : ""
+                  }`}
+                onClick={onWishlistClick}
+                title={`${isInWishlist() === true ? "Go to Wishlist" : "Add to Wishlist"
+                  }`}
+              >
+                <i className="icon-heart"></i>
+              </a>
+            </span>
           </div>
 
           <h3 className="product-title">
@@ -227,31 +228,33 @@ function ProductOne(props) {
           </div>
 
           <div className="button_container_AW">
-           <span className="quick_links">
-           <a className="wishlist-icon"
-              href="/"
-              className={`btn-icon-wish ${isInWishlist() ? "added-wishlist" : ""
-                }`}
-              onClick={onWishlistClick}
-              title={`${isInWishlist() === true ? "Go to Wishlist" : "Add to Wishlist"
-                }`}
-            >
-              <i className="icon-heart"></i>
-            </a>
+            <span className="visible_wishlist">
+              <div className="link-1">
+                <a
+                  href="/"
+                  className={`btn-icon-wish ${isInWishlist() ? "added-wishlist" : ""
+                    }`}
+                  onClick={onWishlistClick}
+                  title={`${isInWishlist() === true ? "Go to Wishlist" : "Add to Wishlist"
+                    }`}
+                >
+                  <i className="icon-heart"></i>
+                </a>
+              </div>
 
+              <div className="link-2"><button type="btn" className="btn_options">SELECT OPTIONS</button></div>
 
-            <button type="btn" className="btn_options">SELECT OPTIONS</button>
-
-
-            <a
-            href="/"
-            className="btn-quickview"
-            title="Quick View"
-            onClick={onQuickViewClick}
-          >
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-           </span>
+              <div className="link-3">
+                <a
+                  href="/"
+                  className="link-icon"
+                  title="Quick View"
+                  onClick={onQuickViewClick}
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </span>
           </div>
 
 

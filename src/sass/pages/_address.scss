@@ -31,10 +31,12 @@
         background: #f4f4f4;
         color: #222524;
         font-family: $font-family;
+        border-radius: 5px;
 
         &:hover {
             background-color: $primary-color;
             color: #fff;
+        border-radius: 5px;
         }
     }
 
@@ -71,4 +73,14 @@
 	line-height: 3rem;
 	vertical-align: top;
 	word-wrap: break-word;
+}
+.btn-dark{
+    border-radius: 5px;
+    background-color: #FE3F6C;
+    border-color: #FE3F6C;
+    color: white;
+    &:hover{
+        background-color: #FF527B;
+        border-color: #FF527B;
+    }
 }

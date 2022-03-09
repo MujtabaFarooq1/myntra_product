@@ -47,7 +47,7 @@ function ProductWidgetContainer(props) {
 
         <div className="row">
 
-          <div className="col-lg-2 col-md-4 col-sm-6 pb-5 pb-lg-0">
+          <div className="col-lg-3 col-md-4 col-sm-6 pb-5 pb-lg-0">
             {loading ? (
               [0, 1, 2].map((item, index) => (
                 <div
@@ -71,7 +71,7 @@ function ProductWidgetContainer(props) {
             )}
           </div>
 
-          <div className="col-lg-2 col-md-4  col-sm-6 pb-5 pb-lg-0">
+          <div className="col-lg-3 col-md-4  col-sm-6 pb-5 pb-lg-0">
             {loading ? (
               [0, 1, 2].map((item, index) => (
                 <div
@@ -95,7 +95,7 @@ function ProductWidgetContainer(props) {
             )}
           </div>
 
-          <div className="col-lg-2 col-md-4  col-sm-6 pb-5 pb-lg-0">
+          <div className="col-lg-3 col-md-4  col-sm-6 pb-5 pb-lg-0">
             {loading ? (
               [0, 1, 2].map((item, index) => (
                 <div
@@ -119,7 +119,7 @@ function ProductWidgetContainer(props) {
             )}
           </div>
 
-          <div className="col-lg-2 col-md-4  col-sm-6 pb-5 pb-lg-0">
+          <div className="col-lg-3 col-md-4  col-sm-6 pb-5 pb-lg-0">
             {loading ? (
               [0, 1, 2].map((item, index) => (
                 <div
@@ -143,7 +143,7 @@ function ProductWidgetContainer(props) {
             )}
           </div>
 
-          <div className="col-lg-2 col-md-4  col-sm-6 pb-5 pb-lg-0">
+          {/* <div className="col-lg-2 col-md-4  col-sm-6 pb-5 pb-lg-0">
             {loading ? (
               [0, 1, 2].map((item, index) => (
                 <div
@@ -189,7 +189,7 @@ function ProductWidgetContainer(props) {
                   ))}
               </>
             )}
-          </div>
+          </div> */}
 
 
 

@@ -18,8 +18,8 @@
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 10px;
-  width: 142%;
-  background-color: #EFEFEF;
+  width: 150%;
+  background-color: #efefef;
   outline: none;
   border: none;
   font-size: 13px;
@@ -27,9 +27,10 @@
   height: 27px;
 }
 .sideBarItemSearchWrapper .search_toggle_icons {
-  color: #A5A6B2;
+  color: #a5a6b2;
 }
 
 .SearchToggleWrapper {
   margin-top: -10px;
+  margin-right: -8.2px !important;
 }

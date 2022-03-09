@@ -309,7 +309,7 @@ function Footer() {
                 <p>
                   In case of any concern,{" "}
                   <span className="footer-contact">
-                    <a href="#">Contact Us</a>
+                    <a href="#" className="footer_contact_btn">Contact Us</a>
                   </span>
                 </p>
               </span>

@@ -537,6 +537,24 @@ function CheckOutPage({ cartList }) {
                     <tbody>
                       {cartList.map((item, index) => (
                         <tr key={"checks" + index}>
+
+                          <td className="img_col">
+                            <figure className="product-image-container checkout_fig">
+                              <ALink
+                                href={`/product/default/${item.slug}`}
+                                className="product-image"
+                              >
+                                <img className="checkout_img"
+                                  src={
+                                    process.env.REACT_APP_LOCAL_ASSET_URL +
+                                    item.small_pictures[0].url
+                                  }
+                                  alt="product"
+                                />
+                              </ALink>
+                            </figure>
+                          </td>
+
                           <td className="product-col">
                             <h2 className="product-title">
                               {item.name + "×" + item.qty}

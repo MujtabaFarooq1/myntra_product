@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 // import { useQuery } from "@apollo/react-hooks";
 
 // Import Apollo Server and Query
@@ -21,8 +22,28 @@ import BrandSection from "../partials/home/brand-section";
 import BlogSection from "../partials/home/blog-section";
 import fakeData from "../FakeData/fakeData";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import userEvent from "@testing-library/user-event";
+
+
+
+// const url = 'https://product.thefastech.com/api/get-Brands';
+// const URL = 'https://www.postman.com/collections/5a7cab66ee9a62fc24ee';
 
 function HomePage() {
+
+
+    axios.get("https://product.thefastech.com/api/get-Brands")
+
+        .then((response) => {
+            console.log(response.data);
+
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+
+
     const data = fakeData;
     const loading = false;
     //   const { data, loading, error } = useQuery(GET_HOME_DATA, {

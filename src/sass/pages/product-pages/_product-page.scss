@@ -193,9 +193,9 @@ $product-single-thumbnail-gutter: 3px !default;
     .add-cart {
       display: inline-flex;
       align-items: center;
-      background-color: #FE3F6C !important;
+      background-color: #fe3f6c !important;
       border-radius: 5px !important;
-      border-color: #FE3F6C !important;
+      border-color: #fe3f6c !important;
 
       &:before {
         content: "\e8ba";
@@ -784,7 +784,6 @@ main .sticky-header {
       background-color: #fff;
       border-radius: 50%;
       // padding: 20px;
-     
 
       &:hover {
         border-color: $primary-color;
@@ -1145,7 +1144,7 @@ main .sticky-header {
     .nav-link {
       color: #000000;
     }
-    .nav-item{
+    .nav-item {
       text-align: center;
       margin-right: 0px !important;
       width: 50% !important;
@@ -1165,7 +1164,6 @@ main .sticky-header {
     outline: none;
     // border-bottom-color: green;
 
-   
     &:active {
       border-bottom-color: red !important;
     }
@@ -1177,7 +1175,6 @@ main .sticky-header {
 
   .nav-item {
     font-size: 1.3rem;
-
   }
 }
 
@@ -1514,7 +1511,7 @@ main .sticky-header {
   margin-bottom: 2.8rem;
 
   a {
-    color: #706f6c;
+    // color: #706f6c;
     text-indent: -9999px;
     letter-spacing: 1px;
     width: 16px;
@@ -1536,6 +1533,7 @@ main .sticky-header {
   a:hover:before {
     content: "\f005\f005\f005\f005\f005";
     font-weight: 900;
+    color: orange;
   }
 
   .star-1 {
@@ -2009,7 +2007,7 @@ main .sticky-header {
 // %Changed%
 // Added the following code
 .customBtn {
-  background: #FE3F6C;
+  background: #fe3f6c;
   color: #fff !important;
   padding: 1rem 0.5rem !important;
   font-size: 1.3rem !important;
@@ -2063,7 +2061,6 @@ main .sticky-header {
     height: 400px;
     object-fit: cover;
     margin: 0 auto;
-
   }
 }
 
@@ -2121,7 +2118,7 @@ main .sticky-header {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background: #FE3F6C;
+  background: #fe3f6c;
   font-size: 15px;
 }
 
@@ -2158,26 +2155,26 @@ main .sticky-header {
   }
 }
 
-.modal-dell-tag{
-  color: #A9ABB2;
+.modal-dell-tag {
+  color: #a9abb2;
 }
-.modal-size-price{
-  color: #FF905A;
-  font-weight: bold !important; 
+.modal-size-price {
+  color: #ff905a;
+  font-weight: bold !important;
 }
-.modal-first-tab{
-  color: #FE3F6C;
+.modal-first-tab {
+  color: #fe3f6c;
   font-weight: bold;
 }
-.first-tab-seller{
+.first-tab-seller {
   margin-top: 15px;
 }
-.img-header{
+.img-header {
   text-align: center;
   margin-bottom: 40px;
   font-size: 14px;
 }
-.sizes_circle_AW{
+.sizes_circle_AW {
   border-radius: 50% !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
@@ -2187,14 +2184,14 @@ main .sticky-header {
   width: 40px !important;
   color: #848484 !important;
 
-  &:hover{
+  &:hover {
     color: #848484 !important;
   }
 }
-.review-wrapper{
+.review-wrapper {
   cursor: pointer;
 }
-.review-submit-btn{
+.review-submit-btn {
   border-radius: 5px !important;
 }
 // .category-cards{
@@ -2205,31 +2202,31 @@ main .sticky-header {
 //   width: 250px;
 //     border: 1px solid black;
 // }
-.featured_product_cards{
+.featured_product_cards {
   border: 1px solid red;
 }
-.list-categoty{
+.list-categoty {
   margin-top: -12px;
 }
-.category-td{
+.category-td {
   border-bottom: 1px solid #dee2e6 !important;
   border-top: none !important;
   position: relative;
   padding-bottom: 7px !important;
-    padding-top: 27px !important;
-    // margin-top: 5px !important;
+  padding-top: 27px !important;
+  // margin-top: 5px !important;
 }
-.cat-td-name{
+.cat-td-name {
   position: absolute;
   top: 7px;
   // left: opx;
   left: 7px;
   font-size: 11px;
 }
-.cat-td-prop{
+.cat-td-prop {
   margin-bottom: -10px !important;
 }
-.colors_checkbox{
+.colors_checkbox {
   height: 20px;
   width: 20px;
   margin-right: 7px;

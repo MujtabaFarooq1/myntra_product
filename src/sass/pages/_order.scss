@@ -28,10 +28,13 @@
 		border: none;
         font-weight: 700;
         font-family: $font-family;
+        border-radius: 5px;
 
         &:hover {
             color: #fff;
             background-color: $primary-color;
+            border-radius: 5px;
+
         }
 	}
 }
@@ -45,6 +48,15 @@
         text-align: center;
         font-family: $font-family;
         font-weight: 700;
+        border-radius: 5px;
+        border-color: #F4F4F4 !important;
+        background-color: #F4F4F4 !important;
+        color: black;
+        &:hover{
+            background-color: #FE3F6C !important;
+            border-color: #FE3F6C !important;
+            color: white;
+        }
     }
 }
 

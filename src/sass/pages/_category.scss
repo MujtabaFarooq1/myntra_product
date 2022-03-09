@@ -298,7 +298,7 @@ span.toggle {
     font-weight: 400;
     line-height: 1.6rem;
     text-decoration: none;
-    &:hover{
+    &:hover {
       background-color: #fa6285;
     }
   }
@@ -383,6 +383,8 @@ span.toggle {
         box-shadow: none;
         text-transform: capitalize;
         border-radius: 50px;
+        height: 20px;
+        width: 20px;
       }
     }
   }
@@ -1163,7 +1165,6 @@ span.toggle {
   }
 }
 
-
 // .search {
 //   width: 12em;
 //   height: 2em;
@@ -1223,4 +1224,9 @@ span.toggle {
 //   }
 // }
 
-
+.colors_item_name_AW {
+  font-weight: 400;
+  margin-left: 30px !important;
+  font-size: 14px !important;
+  margin-top: 0px !important;
+}
